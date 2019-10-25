@@ -1,0 +1,43 @@
+Summarize your lab:
+
+  Part 1:
+     Works  Yes
+     
+  Part 2:
+     Works  Yes
+     
+  Part 3:
+     Works  Yes but issues with duplicate count
+     
+***ANSWERS TO QUESTIONS***
+ Question 1:
+     Which hash table collision resolution method did you use
+     (eg. chaining or open addressing)? Explain your choice
+     briefly (less than 25 words).
+ YOUR ANSWER:
+ 	Used open addressing.
+	Generate hash for use as index value and keep incrementing until an open index is found.
+ Question 2:
+       Which hash function (division or multiplication) did you use?
+       How did you convert a string into a number?
+ YOUR ANSWER:
+	DJB2 was used instead because in practice, it creates lower collisions compared to other methods when
+	used for large data sets. One drawback is that the chance of collision increases when it is mod by
+	the table.
+	Strings were converted to numbers by utilising the ascii char values within the string.
+ Question 3:
+       Another legal XML tag not used in this lab is the
+       stand-alone tag.  This kind of tag
+       combines both a start-tag and end-tag in one.
+       It is identified with a '/' (slash) preceding the
+       final >.  (For example, the <foo/>
+       is a stand-alone tag that is self balancing.
+       
+       Describe briefly how
+       you would modify Part 3 to allow this kind of tag.
+       
+ YOUR ANSWER:
+  	To allow this tag, the logic surrounding intake tags would need to look for
+	">" and if beforehand a "/" then it would be added to the hash table. Since it
+	has an end tag however, it would not be entered to the stack because that would
+	be inefficient.
