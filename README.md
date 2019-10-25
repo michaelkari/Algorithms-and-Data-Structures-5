@@ -1,1 +1,2 @@
-# W2019-Algorithms-and-Data-Structures-5
+# COE428 Lab 5
+This program demonstrates hash table keys and other methods of storing information, such as stacks.
